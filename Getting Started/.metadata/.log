@@ -1,0 +1,42 @@
+!SESSION 2025-03-11 08:56:32.106 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-11 08:57:09.654
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-11 08:57:09.656
+!MESSAGE Log4j2 initialized with config file /home/aizaz/devomech/learning/STM32-FreeRTOS/Getting Started/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-11 08:57:12.843
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-11 08:59:47.739
+!MESSAGE Indexed 'Getting-Started' (19 sources, 81 headers) in 3.65 sec: 4,276 declarations; 17,909 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-11 10:28:28.927
+!MESSAGE Indexed 'Getting-Started' (29 sources, 98 headers) in 1.52 sec: 5,848 declarations; 23,984 references; 1 unresolved inclusions; 8 syntax errors; 14 unresolved names (0.047%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-11 10:47:35.885
+!MESSAGE Indexed 'Getting-Started' (29 sources, 99 headers) in 1.53 sec: 6,383 declarations; 28,017 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+!SESSION 2025-03-11 12:07:28.953 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-03-11 12:07:33.609
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-03-11 12:07:36.635
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-03-11 12:07:36.636
+!MESSAGE Log4j2 initialized with config file /home/aizaz/devomech/learning/STM32-FreeRTOS/Getting Started/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-03-11 12:07:42.245
+!MESSAGE Started RMI Server, listening on port 41337
