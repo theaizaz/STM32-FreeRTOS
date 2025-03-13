@@ -1,0 +1,10 @@
+15:57:29 **** Incremental Build of configuration Debug for project SeggerSystemView ****
+make -j8 all 
+arm-none-eabi-size  SeggerSystemView.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23144	    112	  40800	  64056	   fa38	SeggerSystemView.elf
+Finished building: default.size.stdout
+ 
+
+15:57:30 Build Finished. 0 errors, 0 warnings. (took 292ms)
+
