@@ -47,7 +47,7 @@ There are two ways two add FreeRTOS Kernel to your STM32-CubeIDE project:
     Then go to **portable/GCC** folder and delete all files except the **ARM_CM4F** file, because we are using STM32F4 microcontroller with floating point unit.
     5. Now open your project refresh it and right click on the **FreeRTOS** folder and uncheck **Exclude resource from build**.
 
-    ![""](./Images/uncheck.png)
+    !["uncheck"](./Images/uncheck.png)
 
     6. As FreeRTOS will be using to own heap_4.c file, you need to exclude the default **sysmem.c** file from the build and delete all files other then **heal_4.c** file in the **FreeRTOS/Source/portable/MemMang** folder.
 
@@ -59,7 +59,7 @@ There are two ways two add FreeRTOS Kernel to your STM32-CubeIDE project:
 
     8. **Adding FreeRTOSConfig.h file**
 
-        Copy FreeRTOSConfig.h file from this link [@theaizaz]()
+        Copy FreeRTOSConfig.h file from this link [@theaizaz](https://raw.githubusercontent.com/theaizaz/STM32-FreeRTOS/refs/heads/main/Getting%20Started/Getting-Started/FreeRTOS/FreeRTOSConfig.h)
         and past it in FreeRTOS folder and include its path like above
     
     9. Now if you  compile it will have error of Handler, to solve this go to **stm32f4xx_it.c** and comment out the function of SVC_Handler, PendSV_Handler, SysTick_Handler.
@@ -68,4 +68,35 @@ There are two ways two add FreeRTOS Kernel to your STM32-CubeIDE project:
 
     *FreeRTOS uses ARM Cortex Mx Processor's internal systick timer as its time base (RTOS ticking), so use other timer for Time base source.\
     UI > SYS > Timebase Source*
-       
+    
+
+## Creating a Task
+
+A task is a piece of code that runs independently of your main program and can be scheduled.\
+**Task creation**
+
+This creates a task using dynamic memory allocation, and add task to ready queue. 
+```c
+xTaskCreate(vTaskFunction,
+        "TaskName",
+        StackDepth,
+        *pvParameters, 
+        priority,
+        *taskHandle);
+```
+
+StackDepth: The size of the task stack in words, and that can be calculated by stack width divided by 8 and then multiplied by mentioned stack size.\
+e.g: if stack width is 32 bits and you mention StackDepth of 400, then 1600 bytes will be allocated (32/8 = 4 * (StackDepth = 400) ) = 1600 bytes
+
+**Task implementation**
+
+```c
+void vTaskFunction(void *pvParameters)
+{
+    for (;;)
+    {
+        // Task code here
+    }
+    vTaskDelete(NULL);
+}
+```

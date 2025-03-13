@@ -1,5 +1,4 @@
 ../FreeRTOS/stream_buffer.c:220:26:xStreamBufferGenericCreate	56	static,ignoring_inline_asm
-../FreeRTOS/stream_buffer.c:295:26:xStreamBufferGenericCreateStatic	72	static,ignoring_inline_asm
 ../FreeRTOS/stream_buffer.c:371:6:vStreamBufferDelete	24	static,ignoring_inline_asm
 ../FreeRTOS/stream_buffer.c:404:12:xStreamBufferReset	40	static,ignoring_inline_asm
 ../FreeRTOS/stream_buffer.c:453:12:xStreamBufferSetTriggerLevel	32	static,ignoring_inline_asm

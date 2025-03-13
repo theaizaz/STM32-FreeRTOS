@@ -21,6 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "FreeRTOS.h"
+#include "task.h"
+#include <stdio.h>
 
 /* USER CODE END Includes */
 
@@ -31,6 +34,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 
 /* USER CODE END PD */
 
@@ -49,6 +53,8 @@
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
+static void hello1Func(void *pvParameter);
+static void hello2Func(void *pvParameter);
 
 /* USER CODE END PFP */
 
@@ -65,6 +71,10 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+	TaskHandle_t	Hello1_handler;
+	TaskHandle_t	Hello2_handler;
+
+	BaseType_t status;
 
   /* USER CODE END 1 */
 
@@ -87,6 +97,19 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+
+  //API
+  //xTaskCreate(pxTaskCode, pcName, usStackDepth, pvParameters, uxPriority, pxCreatedTask);
+
+  status = xTaskCreate(hello1Func,"Hello 1",200,NULL,0,&Hello1_handler);
+//
+  configASSERT(status == pdPASS); /* check if task is created successfully */
+//
+  status = xTaskCreate(hello2Func,"Hello 2",200,NULL,0,&Hello2_handler);
+//
+  configASSERT(status == pdPASS);
+
+  vTaskStartScheduler();
 
   /* USER CODE END 2 */
 
@@ -160,6 +183,22 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+static void hello1Func(void *pvParameter){
+	const char* str = "Hello 1\n";
+	for(;;){
+		printf("%s",str);
+	}
+	vTaskDelete(NULL);
+}
+
+static void hello2Func(void *pvParameter){
+	const char* str = "Hello 2\n";
+	for(;;){
+		printf("%s",str);
+	}
+	vTaskDelete(NULL);
+}
 
 /* USER CODE END 4 */
 

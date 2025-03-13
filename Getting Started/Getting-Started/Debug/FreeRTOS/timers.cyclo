@@ -1,6 +1,5 @@
-../FreeRTOS/timers.c:221:16:xTimerCreateTimerTask	4
+../FreeRTOS/timers.c:221:16:xTimerCreateTimerTask	3
 ../FreeRTOS/timers.c:276:23:xTimerCreate	2
-../FreeRTOS/timers.c:303:23:xTimerCreateStatic	4
 ../FreeRTOS/timers.c:343:17:prvInitialiseNewTimer	4
 ../FreeRTOS/timers.c:377:16:xTimerGenericCommand	5
 ../FreeRTOS/timers.c:424:18:xTimerGetTimerDaemonTaskHandle	2

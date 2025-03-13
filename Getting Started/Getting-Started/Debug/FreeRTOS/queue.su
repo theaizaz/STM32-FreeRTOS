@@ -1,13 +1,10 @@
 ../FreeRTOS/queue.c:264:12:xQueueGenericReset	24	static,ignoring_inline_asm
-../FreeRTOS/queue.c:320:19:xQueueGenericCreateStatic	64	static,ignoring_inline_asm
 ../FreeRTOS/queue.c:382:19:xQueueGenericCreate	56	static,ignoring_inline_asm
 ../FreeRTOS/queue.c:444:13:prvInitialiseNewQueue	24	static
 ../FreeRTOS/queue.c:492:17:prvInitialiseMutex	16	static
 ../FreeRTOS/queue.c:522:19:xQueueCreateMutex	32	static
-../FreeRTOS/queue.c:538:19:xQueueCreateMutexStatic	40	static
 ../FreeRTOS/queue.c:616:16:xQueueGiveMutexRecursive	40	static,ignoring_inline_asm
 ../FreeRTOS/queue.c:671:16:xQueueTakeMutexRecursive	40	static,ignoring_inline_asm
-../FreeRTOS/queue.c:714:19:xQueueCreateCountingSemaphoreStatic	48	static,ignoring_inline_asm
 ../FreeRTOS/queue.c:744:19:xQueueCreateCountingSemaphore	32	static,ignoring_inline_asm
 ../FreeRTOS/queue.c:771:12:xQueueGenericSend	64	static,ignoring_inline_asm
 ../FreeRTOS/queue.c:983:12:xQueueGenericSendFromISR	72	static,ignoring_inline_asm

@@ -1,4 +1,3 @@
-../FreeRTOS/event_groups.c:94:24:xEventGroupCreateStatic	32	static,ignoring_inline_asm
 ../FreeRTOS/event_groups.c:146:24:xEventGroupCreate	16	static
 ../FreeRTOS/event_groups.c:192:13:xEventGroupSync	56	static,ignoring_inline_asm
 ../FreeRTOS/event_groups.c:315:13:xEventGroupWaitBits	72	static,ignoring_inline_asm

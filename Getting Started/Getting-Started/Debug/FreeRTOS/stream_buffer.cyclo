@@ -1,5 +1,4 @@
 ../FreeRTOS/stream_buffer.c:220:26:xStreamBufferGenericCreate	8
-../FreeRTOS/stream_buffer.c:295:26:xStreamBufferGenericCreateStatic	10
 ../FreeRTOS/stream_buffer.c:371:6:vStreamBufferDelete	3
 ../FreeRTOS/stream_buffer.c:404:12:xStreamBufferReset	4
 ../FreeRTOS/stream_buffer.c:453:12:xStreamBufferSetTriggerLevel	4
