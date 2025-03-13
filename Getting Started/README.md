@@ -100,3 +100,6 @@ void vTaskFunction(void *pvParameters)
     vTaskDelete(NULL);
 }
 ```
+## Output
+
+!["Output"](./Images/output.png)
