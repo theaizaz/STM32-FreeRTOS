@@ -102,4 +102,6 @@ void vTaskFunction(void *pvParameters)
 ```
 ## Output
 
+**printf works over SWO (ITM) pin of STM32F4, so you need to enable the SWO pin.**
+
 !["Output"](./Images/output.png)
